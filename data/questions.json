@@ -1,0 +1,267 @@
+[
+  {
+    "question": "Which keyword is used to define a function in Python?",
+    "options": ["function", "def", "fun", "define"],
+    "answer": "def",
+    "subject": "Python",
+    "topic": "Functions",
+    "difficulty": "Easy",
+    "explanation": "The def keyword is used to define a function in Python."
+  },
+  {
+    "question": "What is the output of: len([1,2,3])?",
+    "options": ["2", "3", "1", "Error"],
+    "answer": "3",
+    "subject": "Python",
+    "topic": "Lists",
+    "difficulty": "Easy",
+    "explanation": "len returns the number of items in a list."
+  },
+  {
+    "question": "Which operator is used for exponentiation in Python?",
+    "options": ["^", "**", "pow", "%"],
+    "answer": "**",
+    "subject": "Python",
+    "topic": "Operators",
+    "difficulty": "Easy",
+    "explanation": "The ** operator performs exponentiation in Python."
+  },
+  {
+    "question": "Which statement is used for conditional execution in Python?",
+    "options": ["if", "when", "switch", "choose"],
+    "answer": "if",
+    "subject": "Python",
+    "topic": "Conditions",
+    "difficulty": "Easy",
+    "explanation": "Python uses if/elif/else for conditional branching."
+  },
+  {
+    "question": "How do you start a for loop in Python to iterate over a list 'a'?",
+    "options": ["for i in a:", "for (i=0; i<a; i++)", "foreach a as i", "loop a"],
+    "answer": "for i in a:",
+    "subject": "Python",
+    "topic": "Loops",
+    "difficulty": "Easy",
+    "explanation": "Python uses 'for item in iterable:' syntax for loops."
+  },
+  {
+    "question": "What does the list method append() do?",
+    "options": ["Adds an item to end", "Removes first item", "Sorts the list", "Creates a copy"],
+    "answer": "Adds an item to end",
+    "subject": "Python",
+    "topic": "Lists",
+    "difficulty": "Easy",
+    "explanation": "append() adds a single element to the end of the list."
+  },
+  {
+    "question": "Which of these is an immutable sequence type in Python?",
+    "options": ["list", "tuple", "dict", "set"],
+    "answer": "tuple",
+    "subject": "Python",
+    "topic": "Tuples",
+    "difficulty": "Easy",
+    "explanation": "Tuples are immutable; lists are mutable."
+  },
+  {
+    "question": "How do you access the value for key 'k' in dictionary d safely?",
+    "options": ["d[k]", "d.get('k')", "d.find('k')", "d['k']?"],
+    "answer": "d.get('k')",
+    "subject": "Python",
+    "topic": "Dictionaries",
+    "difficulty": "Easy",
+    "explanation": "d.get('k') returns None or default if key is missing."
+  },
+  {
+    "question": "What is the correct way to create a class in Python?",
+    "options": ["class MyClass:", "MyClass = class", "def class MyClass:", "create class MyClass"],
+    "answer": "class MyClass:",
+    "subject": "Python",
+    "topic": "OOP",
+    "difficulty": "Medium",
+    "explanation": "Use 'class ClassName:' syntax to define classes."
+  },
+
+  {
+    "question": "Which of the following is not a primitive data type in C?",
+    "options": ["int", "float", "string", "char"],
+    "answer": "string",
+    "subject": "C Programming",
+    "topic": "Data Types",
+    "difficulty": "Easy",
+    "explanation": "C does not have a built-in string primitive; it uses char arrays."
+  },
+  {
+    "question": "Which symbol is used to declare a pointer in C?",
+    "options": ["&", "*", "%", "$"],
+    "answer": "*",
+    "subject": "C Programming",
+    "topic": "Pointers",
+    "difficulty": "Easy",
+    "explanation": "The * symbol declares a pointer type."
+  },
+  {
+    "question": "What is the correct way to include a header file stdio.h?",
+    "options": ["#include <stdio.h>", "include 'stdio.h'", "import stdio", "using stdio"],
+    "answer": "#include <stdio.h>",
+    "subject": "C Programming",
+    "topic": "Basics",
+    "difficulty": "Easy",
+    "explanation": "Use #include to include headers in C."
+  },
+  {
+    "question": "Which function is used to print formatted output in C?",
+    "options": ["printf", "cout", "print", "echo"],
+    "answer": "printf",
+    "subject": "C Programming",
+    "topic": "I/O",
+    "difficulty": "Easy",
+    "explanation": "printf from stdio.h prints formatted text."
+  },
+  {
+    "question": "How do you declare an array of 10 integers in C?",
+    "options": ["int a[10];", "array<int> a(10);", "int a = new int[10];", "int[10] a;"],
+    "answer": "int a[10];",
+    "subject": "C Programming",
+    "topic": "Arrays",
+    "difficulty": "Medium",
+    "explanation": "C-style arrays use type name followed by size in brackets."
+  },
+
+  {
+    "question": "Which HTML tag is used for the largest heading?",
+    "options": ["<h1>", "<head>", "<title>", "<h6>"],
+    "answer": "<h1>",
+    "subject": "HTML/CSS",
+    "topic": "HTML Basics",
+    "difficulty": "Easy",
+    "explanation": "<h1> represents the top-level heading."
+  },
+  {
+    "question": "Which attribute sets the URL for a link in HTML?",
+    "options": ["href", "src", "link", "url"],
+    "answer": "href",
+    "subject": "HTML/CSS",
+    "topic": "HTML Basics",
+    "difficulty": "Easy",
+    "explanation": "Use <a href=\"...\"> to create hyperlinks."
+  },
+  {
+    "question": "Which CSS property changes the text color?",
+    "options": ["color", "font-color", "text-color", "fg-color"],
+    "answer": "color",
+    "subject": "HTML/CSS",
+    "topic": "CSS Basics",
+    "difficulty": "Easy",
+    "explanation": "The 'color' property controls text color in CSS."
+  },
+  {
+    "question": "Which tag is used to create an unordered list?",
+    "options": ["<ul>", "<ol>", "<li>", "<list>"],
+    "answer": "<ul>",
+    "subject": "HTML/CSS",
+    "topic": "HTML Basics",
+    "difficulty": "Easy",
+    "explanation": "<ul> creates a bulleted list; <ol> creates numbered list."
+  },
+  {
+    "question": "How do you include an external CSS file in HTML?",
+    "options": ["<link rel=\"stylesheet\" href=\"style.css\">", "<script src=\"style.css\">", "<css src=\"style.css\">", "@import 'style.css'"],
+    "answer": "<link rel=\"stylesheet\" href=\"style.css\">",
+    "subject": "HTML/CSS",
+    "topic": "CSS Basics",
+    "difficulty": "Medium",
+    "explanation": "Use link tag in head to include external CSS."
+  },
+
+  {
+    "question": "Which algorithm searches by expanding the shallowest nodes first?",
+    "options": ["Depth-first search", "Breadth-first search", "A*", "Greedy best-first"],
+    "answer": "Breadth-first search",
+    "subject": "Artificial Intelligence",
+    "topic": "Search Algorithms",
+    "difficulty": "Medium",
+    "explanation": "BFS expands the shallowest nodes first."
+  },
+  {
+    "question": "What does 'heuristic' usually mean in search algorithms?",
+    "options": ["Exact cost", "Estimated cost to goal", "Depth limit", "Random choice"],
+    "answer": "Estimated cost to goal",
+    "subject": "Artificial Intelligence",
+    "topic": "Search Algorithms",
+    "difficulty": "Medium",
+    "explanation": "Heuristic functions estimate remaining cost to reach goal."
+  },
+  {
+    "question": "Which representation stores facts and relationships in AI?",
+    "options": ["Knowledge representation", "Genetic algorithm", "Gradient descent", "Hash table"],
+    "answer": "Knowledge representation",
+    "subject": "Artificial Intelligence",
+    "topic": "Knowledge Representation",
+    "difficulty": "Easy",
+    "explanation": "Knowledge representation encodes facts and rules for reasoning."
+  },
+  {
+    "question": "What is an expert system mainly composed of?",
+    "options": ["Neural network", "Rule base and inference engine", "Support vectors", "Decision trees only"],
+    "answer": "Rule base and inference engine",
+    "subject": "Artificial Intelligence",
+    "topic": "Expert Systems",
+    "difficulty": "Medium",
+    "explanation": "Expert systems use a rule base and inference engine to make decisions."
+  },
+  {
+    "question": "Which activation function is commonly used in neural networks?",
+    "options": ["ReLU", "Linear only", "Sigmoid", "Both ReLU and Sigmoid"],
+    "answer": "Both ReLU and Sigmoid",
+    "subject": "Artificial Intelligence",
+    "topic": "Neural Networks",
+    "difficulty": "Medium",
+    "explanation": "ReLU and sigmoid are common activation functions depending on the layer."
+  },
+
+  {
+    "question": "Which of these is a supervised learning task?",
+    "options": ["Clustering", "Regression", "Dimensionality Reduction", "Association Rules"],
+    "answer": "Regression",
+    "subject": "Machine Learning",
+    "topic": "Supervised Learning",
+    "difficulty": "Easy",
+    "explanation": "Regression predicts continuous outputs from labeled data."
+  },
+  {
+    "question": "Which algorithm is commonly used for classification?",
+    "options": ["K-Means", "Linear Regression", "Logistic Regression", "PCA"],
+    "answer": "Logistic Regression",
+    "subject": "Machine Learning",
+    "topic": "Classification",
+    "difficulty": "Easy",
+    "explanation": "Logistic regression is a simple classifier for binary outcomes."
+  },
+  {
+    "question": "What is the goal of clustering?",
+    "options": ["Labeling data", "Grouping similar items", "Reducing dimensions", "Predicting values"],
+    "answer": "Grouping similar items",
+    "subject": "Machine Learning",
+    "topic": "Clustering",
+    "difficulty": "Easy",
+    "explanation": "Clustering groups data points into similar clusters without labels."
+  },
+  {
+    "question": "Which metric is used for regression model evaluation?",
+    "options": ["Accuracy", "Mean Squared Error", "Silhouette Score", "Rand Index"],
+    "answer": "Mean Squared Error",
+    "subject": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Medium",
+    "explanation": "MSE measures average squared difference between predictions and actuals."
+  },
+  {
+    "question": "What does 'overfitting' mean?",
+    "options": ["Model fits training data too closely", "Model too simple", "Data has no labels", "Model is underperforming on training set"],
+    "answer": "Model fits training data too closely",
+    "subject": "Machine Learning",
+    "topic": "Model Evaluation",
+    "difficulty": "Medium",
+    "explanation": "Overfitting occurs when a model captures noise and fails to generalize."
+  }
+]

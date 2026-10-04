@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="about-card">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <div>
+        <h2 class="mb-0">About</h2>
+        <div class="muted">AI Quiz Generator and Performance Analyzer</div>
+      </div>
+      <div>
+        <a href="/quiz/setup" class="btn-primary">Start Quiz</a>
+      </div>
+    </div>
+    <p>This application helps students practice technical subjects through quizzes and immediate performance analysis.</p>
+    <h5>Technology</h5>
+    <ul>
+      <li>Python / Flask</li>
+      <li>File-based JSON storage</li>
+      <li>HTML, CSS, JavaScript, Bootstrap</li>
+      <li>Chart.js / Plotly for visualizations</li>
+    </ul>
+  </div>
+{% endblock %}

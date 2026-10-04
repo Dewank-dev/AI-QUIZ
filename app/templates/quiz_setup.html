@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="card p-4">
+    <h2 class="mb-3">Quiz Setup</h2>
+    <form method="post" action="/quiz/start" class="row g-3">
+      <div class="col-md-4">
+        <label class="form-label">Topic</label>
+        <select id="subject" name="subject" class="form-control form-control-sm">
+          {% for s in subjects %}
+          <option value="{{ s }}">{{ s }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Topic Specific</label>
+        <select id="topic" name="topic" class="form-control form-control-sm">
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Difficulty</label>
+        <select name="difficulty" class="form-control form-control-sm">
+          <option>Easy</option>
+          <option>Medium</option>
+          <option>Hard</option>
+          <option selected>Mixed</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Number of Questions</label>
+        <select name="num" class="form-control form-control-sm">
+          <option>5</option>
+          <option selected>10</option>
+          <option>15</option>
+          <option>20</option>
+        </select>
+      </div>
+
+      <div class="col-12 mt-2 text-end">
+        <button class="btn-primary">Start Quiz</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const topicsMap = {{ topics_map|tojson }};
+
+    document.getElementById('subject').addEventListener('change', function(e){
+      const t = document.getElementById('topic');
+      t.innerHTML = '';
+      const list = topicsMap[e.target.value] || ['All'];
+      list.forEach(x => { const o = document.createElement('option'); o.text = x; o.value = x; t.add(o); });
+    });
+
+    // trigger initial populate
+    document.getElementById('subject').dispatchEvent(new Event('change'));
+  </script>
+{% endblock %}

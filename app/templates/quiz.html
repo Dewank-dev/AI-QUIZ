@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="card p-3 mb-3">
+    <h3 class="mb-0">Quiz: {{ meta.subject }} - {{ meta.topic }} ({{ meta.difficulty }})</h3>
+    <p class="muted mb-0">Questions: {{ meta.num }}</p>
+  </div>
+
+  <form method="post" action="/quiz/submit">
+    {% for q in questions %}
+    <div class="question-card">
+      <div><strong>Question {{ loop.index }} of {{ questions|length }}</strong></div>
+      <p>{{ q.question }}</p>
+      <div>
+        {% for opt in q.options %}
+        <div class="form-check mb-1">
+          <input class="form-check-input" type="radio" name="q_{{ q.id }}" id="q_{{ q.id }}_{{ loop.index }}" value="{{ opt }}">
+          <label class="form-check-label" for="q_{{ q.id }}_{{ loop.index }}">{{ opt }}</label>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+
+    <div class="text-end mt-3">
+      <button class="btn-submit">Submit Quiz</button>
+    </div>
+  </form>
+{% endblock %}

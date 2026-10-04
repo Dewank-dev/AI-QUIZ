@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <div>
+      <h3 class="mb-0">Attempt History</h3>
+      <div class="muted">Recent quizzes and performance</div>
+    </div>
+    <div>
+      <form method="post" action="/history/clear" onsubmit="return confirm('Delete all history? This cannot be undone.');">
+        <button type="submit" class="btn-accent">Clear All History</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="history-table">
+    <table class="table">
+      <thead>
+        <tr><th>Date</th><th>Subject</th><th>Topic</th><th>Difficulty</th><th>Score</th></tr>
+      </thead>
+      <tbody>
+        {% for a in attempts %}
+        <tr>
+          <td>{{ a.created_at }}</td>
+          <td>{{ a.subject }}</td>
+          <td>{{ a.topic }}</td>
+          <td>{{ a.difficulty }}</td>
+          <td><a href="/result/{{ a.id }}">{{ a.score }} ({{ '%.2f'|format(a.percent) }}%)</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}

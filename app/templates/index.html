@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="hero">
+    <h1>AI Quiz Generator &amp; Performance Analyzer</h1>
+    <p class="lead">Test your knowledge. Analyze your performance. Improve your skills.</p>
+    <div class="d-flex justify-content-center cta">
+      <a class="btn btn-primary" href="/quiz/setup">Start Quiz</a>
+      <a class="btn btn-outline-secondary" href="/about">About</a>
+    </div>
+  </div>
+
+  <div class="row mt-4 g-3">
+    <div class="col-md-3">
+      <div class="feature-card text-center p-3"><h5>5 Subjects</h5></div>
+    </div>
+    <div class="col-md-3">
+      <div class="feature-card text-center p-3"><h5>Multiple Topics</h5></div>
+    </div>
+    <div class="col-md-3">
+      <div class="feature-card text-center p-3"><h5>AI-Assisted Questions</h5></div>
+    </div>
+    <div class="col-md-3">
+      <div class="feature-card text-center p-3"><h5>Instant Analysis</h5></div>
+    </div>
+  </div>
+{% endblock %}
